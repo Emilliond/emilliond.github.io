@@ -3,91 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Разработчика</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Подключите ваш CSS файл -->
+    <title>Резюме QA-инженера | Давлетов Эмиль</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #e9ecef;
+            line-height: 1.6;
         }
         header {
             text-align: center;
-            padding: 10px 0;
-            background-color: #333;
+            padding: 25px 0;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
             color: white;
+            border-radius: 8px 8px 0 0;
         }
         h1 {
             margin: 0;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 5px;
         }
         section {
             background: white;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        section:hover {
+            transform: translateY(-2px);
         }
         h2 {
-            color: #333;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 8px;
+            margin-top: 0;
         }
         .contact-info {
-            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            background: #f8f9fa;
+            padding: 20px;
         }
-        .skills, .experience, .education {
-            list-style-type: none;
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
             padding: 0;
         }
-        .skills li, .experience li, .education li {
-            margin-bottom: 10px;
+        .skills li {
+            background: #e1f5fe;
+            color: #0277bd;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #3498db;
+        }
+        .item-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .item-subtitle {
+            color: #7f8c8d;
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+        .item-description {
+            margin: 5px 0;
+            color: #34495e;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            color: #7f8c8d;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Danil Kolbasenko</h1>
-    <p>Разработчик | Программист | Инженер</p>
+    <h1>Давлетов Эмиль</h1>
+    <div class="subtitle">QA-инженер | Автоматизация тестирования на Java</div>
 </header>
 
 <section class="contact-info">
-    <h2>Контактная информация</h2>
-    <p>Email: ваш.email@example.com</p>
-    <p>Телефон: +7 (123) 456-78-90</p>
-    <p>GitHub: <a href="https://github.com/ваш_пользователь" target="_blank">github.com/ваш_пользователь</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/ваш_профиль" target="_blank">linkedin.com/in/ваш_профиль</a></p>
+    <p>📧 emil.davletov@email.com</p>
+    <p>📱 +7 (999) 123-45-67</p>
+    <p>💻 <a href="https://github.com/emil-qa" target="_blank">github.com/emil-qa</a></p>
+    <p>🔗 <a href="https://linkedin.com/in/emil-davletov" target="_blank">linkedin.com/in/emil-davletov</a></p>
+    <p>📍 Москва, Россия</p>
 </section>
 
-<section class="skills">
+<section>
+    <h2>О себе</h2>
+    <p>QA-инженер с опытом ручного и автоматизированного тестирования. Специализируюсь на Java-стеке для написания автотестов. Умею выстраивать процессы тестирования с нуля, внедрять автоматизацию и улучшать качество продукта. Внимательный к деталям, ответственный, постоянно изучаю новые инструменты и методологии тестирования.</p>
+</section>
+
+<section>
     <h2>Навыки</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>React, Angular, Vue.js</li>
-        <li>Node.js, Express</li>
-        <li>Python, Django</li>
-        <li>SQL, MongoDB</li>
+    <ul class="skills">
+        <li>Java (JUnit, TestNG)</li>
+        <li>Selenium WebDriver</li>
+        <li>REST Assured</li>
+        <li>Postman</li>
+        <li>SQL (MySQL, PostgreSQL)</li>
+        <li>Maven/Gradle</li>
+        <li>Git</li>
+        <li>Jenkins</li>
+        <li>Jira/TestRail</li>
+        <li>Docker</li>
+        <li>CI/CD</li>
+        <li>SoapUI</li>
     </ul>
 </section>
 
-<section class="experience">
+<section>
     <h2>Опыт работы</h2>
-    <ul>
-        <li><strong>Компания A</strong> — Разработчик (2020 - настоящее время)</li>
-        <li><strong>Компания B</strong> — Младший разработчик (2018 - 2020)</li>
-    </ul>
+    
+    <div class="experience-item">
+        <div class="item-title">QA-инженер (автоматизация)</div>
+        <div class="item-subtitle">ООО "ТехноСофт" | 2022 - настоящее время</div>
+        <ul class="item-description">
+            <li>Разработка и поддержка автотестов на Java + Selenium для web-приложений</li>
+            <li>Написание API-тестов с использованием REST Assured</li>
+            <li>Интеграция автотестов в CI/CD пайплайн (Jenkins)</li>
+            <li>Проведение код-ревью тестовой документации</li>
+            <li>Участие в планировании спринтов и оценке задач</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <div class="item-title">Младший QA-инженер</div>
+        <div class="item-subtitle">ООО "ИТ Решения" | 2020 - 2022</div>
+        <ul class="item-description">
+            <li>Ручное тестирование web и mobile приложений</li>
+            <li>Составление тест-кейсов и чек-листов в TestRail</li>
+            <li>Заведение баг-репортов в Jira</li>
+            <li>Начало автоматизации простых сценариев на Java</li>
+            <li>Участие в регрессионном тестировании</li>
+        </ul>
+    </div>
 </section>
 
-<section class="education">
+<section>
     <h2>Образование</h2>
-    <ul>
-        <li><strong>Университет A</strong> — Бакалавр в области информатики (2014 - 2018)</li>
+    <div class="education-item">
+        <div class="item-title">Московский технический университет</div>
+        <div class="item-subtitle">Бакалавр прикладной информатики | 2016 - 2020</div>
+        <p class="item-description">Диплом с отличием, специализация "Тестирование программного обеспечения"</p>
+    </div>
+
+    <div class="education-item">
+        <div class="item-title">Курсы и сертификаты</div>
+        <ul class="item-description">
+            <li>Java для тестировщиков (Stepik, 2022)</li>
+            <li>Selenium WebDriver: полное руководство (Udemy, 2023)</li>
+            <li>ISTQB Foundation Level (в процессе)</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Проекты</h2>
+    <div class="experience-item">
+        <div class="item-title">Автоматизация тестирования интернет-магазина</div>
+        <p class="item-description">Разработал фреймворк для автоматизации тестирования на Java + Selenide. Реализовал PageObject паттерн, подготовил отчеты через Allure. Покрытие составило 60% критического функционала.</p>
+    </div>
+    <div class="experience-item">
+        <div class="item-title">Тестирование REST API</div>
+        <p class="item-description">Написал коллекцию автотестов для проверки REST API с использованием REST Assured и TestNG. Интегрировал тесты в CI/CD процесс.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Языки</h2>
+    <ul class="skills" style="background: none; padding: 0;">
+        <li>Русский — родной</li>
+        <li>Английский — Intermediate (чтение технической документации)</li>
     </ul>
 </section>
 
-<footer style="text-align:center; margin-top:20px;">
-    <p>&copy; 2023 Ваше Имя. Все права защищены.</p>
+<footer>
+    <p>&copy; 2024 Давлетов Эмиль. QA-инженер на Java.</p>
+    <p style="font-size: 0.9em; margin-top: 5px;">Готов к новым проектам и профессиональному развитию</p>
 </footer>
 
 </body>
-
 </html>
